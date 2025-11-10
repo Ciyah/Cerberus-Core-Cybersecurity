@@ -37,3 +37,57 @@ The model was trained on 80% of the data and tested on the remaining 20%. The re
 
 ### Classification Report
 The model was able to identify both "Normal" and "Attack" traffic with near-perfect precision and recall.
+
+## 🔧 How to Run
+1.  **Install dependencies:**
+    ```bash
+    pip install pandas scikit-learn numpy
+    ```
+2.  **Download the dataset:**
+    Place the `KDDTrain+.csv` file in the same folder as the script (and rename it per the note above).
+
+3.  **Navigate to the project folder:**
+    Before running, you **must** change your terminal's directory to this project's folder.
+    ```bash
+    # Example for Windows
+    cd "C:\Users\user\OneDrive\Desktop\Personal Projects\Project 2\"
+    
+    # Example for macOS/Linux
+    cd /home/user/projects/Cerberus-Core/
+    ```
+
+4.  **Run the script:**
+    ```bash
+    # Once you are in the correct folder:
+    python AnomalyDetector.py
+    ```
+---
+
+## 📦 How to Create a Standalone Executable
+You can bundle this script into a **single executable** for your operating system so you can run it without needing to install Python.
+
+1.  **Install PyInstaller:**
+    ```bash
+    python -m pip install pyinstaller
+    ```
+2.  **Run the build command:**
+    PyInstaller will create an executable for the OS you are currently on.
+
+    * **On Windows (.exe):**
+        ```bash
+        pyinstaller --onefile -n CerberusCore.exe AnomalyDetector.py
+        ```
+    * **On macOS or Linux:**
+        ```bash
+        pyinstaller --onefile -n CerberusCore AnomalyDetector.py
+        ```
+3.  **Find your file:** Your new executable (`CerberusCore.exe` or `CerberusCore`) will be inside the new `dist` folder.
+
+4.  **Run your new executable (from the terminal):**
+    ```bash
+    # On Windows
+    .\dist\CerberusCore.exe
+
+    # On macOS/Linux
+    ./dist/CerberusCore
+    ```
