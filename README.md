@@ -19,9 +19,9 @@ This project demonstrates the fundamentals of building a network intrusion detec
 * **Benchmark Trained:** The model is trained and validated on the trusted NSL-KDD dataset, a standard for intrusion detection research.
 
 ### Tech Stack
-* **Python**
-* **Pandas:** For loading, cleaning, and pre-processing the data.
-* **Scikit-learn:** For splitting the data and building the `RandomForestClassifier` model.
+* **`Python`:** The core language for the script.
+* **`Pandas`:** For loading, cleaning, and pre-processing the data.
+* **`Scikit-learn`:** For splitting the data and building the `RandomForestClassifier` model.
 
 ### Topics
 `python` `cybersecurity` `machine-learning` `ai` `intrusion-detection-system` `network-security` `data-science` `scikit-learn` `pandas`
