@@ -11,6 +11,13 @@ This project demonstrates the fundamentals of building a network intrusion detec
 2.  **Training** an AI classifier.
 3.  **Evaluating** the model's performance on unseen data.
 
+## ✨ Features
+* **High-Accuracy AI Model:** Uses a `RandomForestClassifier` to detect anomalies with **99.69% accuracy** on the test set.
+* **Intelligent Classification:** Classifies all network traffic into two simple categories: "Normal" (0) or "Attack" (1).
+* **Automated Data Pre-processing:** Utilizes `pandas` to automatically clean and prepare the dataset, converting categorical features (like 'tcp', 'http') into a numerical format using one-hot encoding.
+* **Built on Standard Libraries:** Leverages `scikit-learn` and `pandas` for a robust, industry-standard data science workflow.
+* **Benchmark Trained:** The model is trained and validated on the trusted NSL-KDD dataset, a standard for intrusion detection research.
+
 ### Tech Stack
 * **Python**
 * **Pandas:** For loading, cleaning, and pre-processing the data.
