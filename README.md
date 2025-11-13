@@ -55,11 +55,14 @@ The model was able to identify both "Normal" and "Attack" traffic with near-perf
 
 3.  **Navigate to the project folder:**
     Before running, you **must** change your terminal's directory to this project's folder.
-    ```bash
-    # Example for Windows
-    cd "C:\Users\user\OneDrive\Desktop\Personal Projects\Project 2\"
     
-    # Example for macOS/Linux
+    * **Example for Windows**
+    ```bash
+    cd "C:\Users\user\OneDrive\Desktop\Personal Projects\Project 2\"
+    ```
+    
+    * **Example for macOS/Linux**
+    ```bash
     cd /home/user/projects/Cerberus-Core/
     ```
 
@@ -88,13 +91,14 @@ You can bundle this script into a **single executable** for your operating syste
         ```bash
         pyinstaller --onefile -n CerberusCore AnomalyDetector.py
         ```
-3.  **Find your file:** Your new executable (`CerberusCore.exe` or `CerberusCore`) will be inside the new `dist` folder.
-
-4.  **Run your new executable (from the terminal):**
+3.  **Find and run your executable:** Your new executable (`CerberusCore.exe` or `CerberusCore`) will be inside the new `dist` folder.
+    
+    * **On Windows**
     ```bash
-    # On Windows
     .\dist\CerberusCore.exe
+    ```
 
-    # On macOS/Linux
+    * **On macOS/Linux**
+    ```bash
     ./dist/CerberusCore
     ```
